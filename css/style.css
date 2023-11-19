@@ -1,6 +1,5 @@
 body {
     font-family: "Roboto", sans-serif;
-    margin: 0;
 }
 
 #grid-container {
@@ -20,7 +19,10 @@ header {
 }
 
 nav ul {
+    list-style: none;
     padding: 0;
+    padding-bottom: 1rem;
+    margin: 0;
 }
 
 nav a {
@@ -31,15 +33,61 @@ nav a {
     font-size: 14px;
 }
 
+
 main {
     text-align: center;
+}
+
+/* Kilde: https://www.w3schools.com/css/css_image_transparency.asp*/
+
+.background {
+    background-image: url(img/pen-4337524_1280.jpg);
+}
+
+.about-article {
+    position: relative;
+    margin: 30px;
+    padding: 30px;
+    background-color: #ffffff;
+    border: 1px solid transparent;
+    opacity: 0.7;
+    margin-top: 1rem;
+}
+
+.about-h {
+    font-weight: bold;
+    font-size: 20px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.about-article p {
+    text-align: left;
+    padding: 2rem;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.get-in-touch-btn {
+    position: relative;
+    display: inline-block;
+    background-color: #e6bd43;
+    font-weight: bold;
+    color: black;
+    text-decoration: none;
+    padding: 1rem;
+    margin: 0.5rem;
+    width: max-content;
+    text-align: left;
+    margin-top: 30px;
 }
 
 hr {
     background-color: #e6bd43;
     border-color: #e6bd43;
+    border-style: none;
     width: 80%;
-    height: 2px;
+    height: 3px;
 }
 
 .portfolio-img {
@@ -68,6 +116,58 @@ hr {
     position: relative;
     font-weight: bold;
     
+}
+
+.explore-h, .branding-h, .design-h, .development-h {
+    text-align: justify;
+    padding-left: 45px;
+}
+
+.branding {
+    padding: 1rem;
+}
+
+.branding-btn {
+    display: flex;
+    columns: 3;
+    text-decoration: none;
+    color: black;
+    width: 100px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 0.5rem;
+    margin: auto;
+}
+
+.design-btn {
+    display: flex;
+    columns: 3;
+    text-decoration: none;
+    color: black;
+    width: 60px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 0.5rem;
+    margin: auto;
+}
+
+.development-btn {
+    display: flex;
+    columns: 3;
+    text-decoration: none;
+    color: black;
+    width: 130px;
+    border-style: solid;
+    border-width: 2px;
+    border-color: black;
+    padding: 0.5rem;
+    margin: auto;
+}
+
+li {
+    list-style: none;
 }
 
 .compeling-headline {
@@ -167,8 +267,7 @@ video {
     font-weight: bold;
     border-style: solid;
     padding: 1rem;
-    text-align: justify
-   
+    text-align: justify  
 }
 
 .about-our-company-text {
@@ -177,7 +276,6 @@ video {
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 10%;
-
 }
 
 .our-services-header {
@@ -186,7 +284,7 @@ video {
     padding-top: 1rem;
 }
 
-.our-services {
+#our-services {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -203,12 +301,13 @@ video {
     
 }
 
-.branding {
-    padding: 1rem;
+.contact:hover, .our-services-gold-btn:hover, .about-our-company-btn:hover, .sign-up-btn:hover, .branding-btn:hover, .design-btn:hover, .development-btn:hover {
+    background-color: #252525;
+    color: #e6bd43;
 }
 
 .fa-solid {
-    font-size: 25px;
+    font-size: 25px; 
 }
 
 .clients {
@@ -339,8 +438,20 @@ footer {
         grid-area: main;
     }
 
+    .flex-grow {}
+
     footer {
         grid-area: footer;
+    }
+
+    /*Kilde: https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
+    .placehold {
+        transition: .5s;
+    }
+
+    .placehold:hover {
+        transform: scale(1.5);
+
     }
 
     header nav ul li {
@@ -352,13 +463,14 @@ footer {
         margin: 2rem;
     }
 
-    header nav span {
-        float: left;
-        margin: 2rem;
+    header span nav ul {
+        display: inline-block;
     }
 
-    .logo-header {
-        
+    header span {
+        display: flex;
+        float: left;
+        margin: 2rem;
     }
 
     .our-services {
@@ -367,6 +479,7 @@ footer {
         padding: 2rem;
         justify-content: space-around;
     }
+
 
     .placehold-about-our-company {
         width: 400px;
@@ -404,9 +517,30 @@ footer {
             opacity: 0.50;
         }
     }
+
+    #branding {
+        display: inline-block;
+        flex-grow: ;
+        max-width: 692px;
+    }
+
+
+    footer a {
+        display: flex;
+        float: left;
+        margin-bottom: 50px;
+        margin-top: 50px;
+    }
+
+    .fa-brands {
+        float: right;
+    }
+
+    p.copyrights {
+       margin-top: 100px;
+       margin-left: 50px;
+    }
+
+        
+    }
     
-    
-
-
-
-}
