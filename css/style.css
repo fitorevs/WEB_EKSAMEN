@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: "Roboto", sans-serif;
 }
@@ -37,23 +41,27 @@ main {
     text-align: center;
 }
 
+img {
+    width: 350px;
+    padding-top: 1rem;
+}
+
 /* Kilde: https://www.w3schools.com/css/css_image_transparency.asp*/
 .background {
     position: relative;
-    justify-content: center;
     padding: 1rem 0;
     max-width: 100%;
+}
 
-    &&::before {
-        content: '';
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        background-size: cover;
-        background-image: url(img/pen-4337524_1280.jpg);
-    }
+.background::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-size: cover;
+    background-image: url(img/pen-4337524_1280.jpg);
 }
 
 .about-article {
@@ -96,29 +104,27 @@ hr {
     background-color: #e6bd43;
     border-color: #e6bd43;
     border-style: none;
-    width: 80%;
+    width: 78%;
     height: 3px;
 }
 
 .portfolio-img {
     position: relative;
-    justify-content: center;
     padding: 1rem 0;
     height: 300px;
+}
 
-
-    /* Kilde: https://coder-coder.com/background-image-opacity/ */
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        background-image: url("img/pen-4337524_1280.jpg");
-        background-size: cover;
-        opacity: 0.50;
-    }
+/* Kilde: https://coder-coder.com/background-image-opacity/ */
+.portfolio-img::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("img/pen-4337524_1280.jpg");
+    background-size: cover;
+    opacity: 0.50;
 }
 
 .portfolio-img h1 {
@@ -128,7 +134,16 @@ hr {
 
 #explore h2, #branding h2, #design h2, #development h2 {
     text-align: justify;
-    padding-left: 45px;
+    padding-left: 3rem;
+    font-size: 18px;
+}
+
+#explore h3, #branding h3, #design h3, #development h3 {
+    text-align: justify;
+    padding-left: 3rem;
+    font-size: 18px;
+    padding-bottom: 1rem;
+    
 }
 
 .branding {
@@ -180,23 +195,22 @@ li {
 
 .compeling-headline {
     position: relative;
-    justify-content: center;
     align-items: center;
     padding: 1rem 0;
+}
 
-    /* Kilde: https://coder-coder.com/background-image-opacity/ */
-    &::before {
-        content: '';
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        bottom: 0px;
-        left: 0px;
-        background-image: url("img/pen-4337524_1280.jpg");
-        background-size: cover;
-        background-position: top center;
-        opacity: 0.50;
-    }
+/* Kilde: https://coder-coder.com/background-image-opacity/ */
+.compeling-headline::before {
+    content: '';
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    background-image: url("img/pen-4337524_1280.jpg");
+    background-size: cover;
+    background-position: top center;
+    opacity: 0.50;
 }
 
 video {
@@ -450,18 +464,8 @@ footer {
         grid-area: footer;
     }
 
-    /*Kilde: https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
-    .placehold {
-        transition: .5s;
-    }
-
-    .placehold:hover {
-        transform: scale(1.5);
-
-    }
-
     header nav ul li {
-        display: inline-block;
+        display: inline-block;    
     }
     
     header nav ul {
@@ -486,7 +490,6 @@ footer {
         justify-content: space-around;
     }
 
-
     .placehold-about-our-company {
         width: 400px;
         float: left;
@@ -501,23 +504,22 @@ footer {
 
     .compeling-headline {
         position: relative;
-        justify-content: center;
         align-items: center;
         padding: 1rem 0;
-    
-        /* Kilde: https://coder-coder.com/background-image-opacity/ */
-        &::before {
-            content: '';
-            position: absolute;
-            top: 0px;
-            right: 0px;
-            bottom: 0px;
-            left: 0px;
-            background: url(img/mountains.mp4);
-            background-size: cover;
-            background-position: top center;
-            opacity: 0.50;
-        }
+    }
+
+    /* Kilde: https://coder-coder.com/background-image-opacity/ */
+    .compeling-headline::before {
+        content: '';
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background: url(img/mountains.mp4);
+        background-size: cover;
+        background-position: top center;
+        opacity: 0.50;
     }
 
     #branding {
@@ -525,8 +527,19 @@ footer {
         max-width: 692px;
     }
 
+    .flex-container
+
     iframe {
         width:1000px;
+    }
+
+    /*Kilde: https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
+    .placehold {
+        transition: .5s;
+    }
+
+    .placehold:hover {
+        transform: scale(1.5);
     }
 
 
