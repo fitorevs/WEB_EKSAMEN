@@ -527,7 +527,15 @@ footer {
         max-width: 692px;
     }
 
-    .flex-container
+    .flex-container {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .artikkel-kort {
+        flex-grow: 1;
+        max-width: 692px;
+    }
 
     iframe {
         width:1000px;
