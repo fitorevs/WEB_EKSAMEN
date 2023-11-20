@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Stilark for normalisering som sikrer at nettstedet ser likt ut på alle nettlesere -->
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
+    <!-- Ikon-stiler fro ikoner fra FontAwesome -->
+    <link href="css/font/css/fontawesome.css" rel="stylesheet">
+    <link href="css/font/css/brands.css" rel="stylesheet">
+    <link href="css/font/css/solid.css" rel="stylesheet">
+    <!-- Font-stiler for fonter fra GoogleFonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap" rel="stylesheet">
+    <!--Nettstedets egen stilark -->
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <title>Index</title>
+</head>
+<body>
+    <div id="grid-container">
+        <!--header start-->
+        <header>
+            <nav>
+                <span>
+                    <a href="index.html"><img src="img/logo1.png" class="logo-header" alt="Logo"></a>
+                </span>
+                <ul>
+                    <li><a class="active" href="index.html" class="home">Home</a></li>
+                    <li><a href="portfolio.html" class="portfolio">Portfolio</a></li>
+                    <li><a href="about.html" class="about">About</a></li>
+                    <li><a href="about.html#contact" class="contact">Contact</a></li> <!--Kilde: https://www.w3schools.com/html/html_links_bookmarks.asp-->
+                </ul>
+            </nav>
+        </header>
+        <!--header slutt-->
+        <!--main start-->
+        <main>
+            <section class="compeling-headline">
+                <video src="img/mountains.mp4"></video>
+                <h1 class="compeling-headline-h">Compeling headline</h1>
+                <p class="compeling-headline-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <a href="index.html#our-services" class="our-services-gold-btn">Read more about our services</a>
+            </section>
+            <section class="enganging-subheading">
+                <h2 class="enganging-subheading-h">Enganging subheading. What can you help your visitors with</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis.</p>
+            </section>
+            <section>
+                <article class="about-our-company">
+                    <img src="https://placehold.co/400x400" class="placehold-about-our-company" alt="Placeholder 400x400">
+                    <h2 class="about-our-company-h">About Our Company</h2>
+                    <p class="about-our-company-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis semper risus.</p>
+                    <section>
+                        <a href="about.html" class="about-our-company-btn">Read more about us</a>
+                    </section>
+                </article>
+            </section>
+            <h2 class="our-services-header">Our Services</h2>
+            <section id="our-services">
+                    <section class="branding">
+                        <i class="fa-solid fa-people-group"></i>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, <br/>
+                            consectetur adipiscing elit.</p>
+                    </section>
+                    <section class="branding">
+                        <i class="fa-solid fa-cloud-arrow-up"></i>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, <br/>
+                            consectetur adipiscing elit.</p>
+                    </section>
+                    <section class="branding">
+                        <i class="fa-solid fa-code"></i>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, <br/>
+                            consectetur adipiscing elit.</p>
+                    </section>
+                    <section class="branding">
+                        <i class="fa-solid fa-wifi"></i>
+                        <h3>Branding</h3>
+                        <p>Lorem ipsum dolor sit amet, <br/>consectetur adipiscing elit.</p>
+                    </section>
+            </section>
+            <section class="sign-up-newsletter">
+                <h3 class="sign-up-header">Sign up for our newsletter</h3>
+                <form>
+                    <input type="email" name="email" placeholder="nora@epost.no" class="sign-up-email-btn" required>
+                    <input type="submit" value="Sign me up!" class="sign-up-btn">
+                </form>
+            </section>
+        </main>
+        <!--main slutt-->
+        <!--footer start-->
+        <footer>
+            <a href="index.html"><img src="img/logo1.png" class="footer-logo" alt="Logo"></a>
+            <p class="copyrights">Copyrights Companyname 2023</p>
+            <a href="https://www.facebook.com/" class="fa-brands fa-square-facebook"></a>
+            <a href="https://www.instagram.com/" class="fa-brands fa-square-instagram"></a>
+            <a href="https://www.linkedin.com/" class="fa-brands fa-linkedin"></a>
+        </footer>
+        <!--footer slutt-->
+    </div>
+    <!-- Scroll-to-top-pil --> <!-- Kilde: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top -->
+    <button onclick="topFunction()" id="scroll-btn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <script>
+        let mybutton = document.getElementById("scroll-btn");
+    
+        window.onscroll = function() {scrollFunction()};
+    
+        function scrollFunction() {
+          mybutton.style.display = "block";
+        }
+    
+        function topFunction() {
+          document.body.scrollTop = 0;
+          document.documentElement.scrollTop = 0;
+        }
+    </script>
+</body>
+</html>
