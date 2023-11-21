@@ -329,11 +329,6 @@ video {
     font-weight: bold;   
 }
 
-.contact:hover, .our-services-gold-btn:hover, .about-our-company-btn:hover, .sign-up-btn:hover, .branding-btn:hover, .design-btn:hover, .development-btn:hover, .get-in-touch-btn:hover, .send-msg-btn:hover{
-    background-color: #252525;
-    color: #e6bd43;
-}
-
 .fa-solid {
     font-size: 25px; 
 }
@@ -512,6 +507,7 @@ iframe {
     }
     
     header nav ul {
+        display: flex;
         float: right; 
         margin: 2rem;
     }
@@ -523,7 +519,32 @@ iframe {
     header span {
         display: flex;
         float: left;
-        margin: 2rem;
+    }
+
+    .about-article {
+        margin-left: 40%;
+        background-color: #ffffff;
+        border: 1px transparent;
+        opacity: 0.7;
+        margin-top: 1rem;
+    }
+
+    .get-in-touch-btn {
+        position: relative;
+        display: inline-block;
+        background-color: #e6bd43;
+        font-weight: bold;
+        color: black;
+        text-decoration: none;
+        padding: 1rem;
+        margin: 0.5rem;
+        margin-right: 65%;
+        width: max-content;
+    }
+
+    .contact:hover, .our-services-gold-btn:hover, .about-our-company-btn:hover, .sign-up-btn:hover, .branding-btn:hover, .design-btn:hover, .development-btn:hover, .get-in-touch-btn:hover, .send-msg-btn:hover{
+        background-color: #252525;
+        color: #e6bd43;
     }
 
     .our-services {
