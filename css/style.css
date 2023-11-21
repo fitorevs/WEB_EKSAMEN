@@ -37,11 +37,15 @@ nav a {
     font-size: 14px;
 }
 
+a .home:visited {
+    font-weight: bold;
+}
+
 main {
     text-align: center;
 }
 
-img {
+.placehold, .placehold-artikkel{
     width: 350px;
     padding-top: 1rem;
 }
@@ -130,6 +134,7 @@ hr {
 .portfolio-img h1 {
     position: relative;
     font-weight: bold;
+    padding-top: 20%;
 }
 
 #explore h2, #branding h2, #design h2, #development h2 {
@@ -284,12 +289,14 @@ video {
 }
 
 .about-our-company-btn {
+    box-sizing: border-box;
     text-decoration: none;
     color: black;
     font-weight: bold;
     border-style: solid;
     padding: 1rem;
-    text-align: justify  
+    margin-right: 14%;
+
 }
 
 .about-our-company p {
@@ -319,11 +326,10 @@ video {
 
 .contact {
     background-color: #e6bd43;
-    font-weight: bold;
-    
+    font-weight: bold;   
 }
 
-.contact:hover, .our-services-gold-btn:hover, .about-our-company-btn:hover, .sign-up-btn:hover, .branding-btn:hover, .design-btn:hover, .development-btn:hover, .get-in-touch-btn:hover{
+.contact:hover, .our-services-gold-btn:hover, .about-our-company-btn:hover, .sign-up-btn:hover, .branding-btn:hover, .design-btn:hover, .development-btn:hover, .get-in-touch-btn:hover, .send-msg-btn:hover{
     background-color: #252525;
     color: #e6bd43;
 }
@@ -395,10 +401,44 @@ input[type=text], textarea {
     font-size: 15px;
 }
 
-.fa-location-pin, .fa-phone, .fa-envelope {
-    color: #252525;
-    justify-content: space-between
+#subject, #name, #message {
+    border-style: none;
+    width: 400px;
 }
+
+.contact-info-h {
+
+}
+
+.contact-icons li{
+    margin: 1rem;
+    margin-left: 2rem;
+}
+
+.fa-location-pin, .fa-phone, .fa-envelope {
+    color: #252525; 
+    padding-right: 1rem;
+}
+
+.contact-us h3 {
+    text-align: center;
+    font-size: 18px;
+    padding-top: 1rem
+
+}
+.contact-us h4 {
+    text-align: justify;
+    padding-left: 3rem;
+    font-size: 18px;
+    padding-bottom: 1rem
+}
+
+.contact-us p {
+    text-align: justify;
+    padding-left: 50px;
+    padding-right: 50px;  
+}
+
 
 footer {
     text-align: center;
@@ -423,6 +463,10 @@ footer {
     width: 120px;
 }
 
+iframe {
+    width: 100%;
+}
+
 
 #scroll-btn { /* Kilde: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top */
     display: none;
@@ -442,7 +486,6 @@ footer {
   /*#scroll-btn:hover { kode til annen farge når noe trykkes på
     background-color: #555;
   }*/
-
 
 
 @media only screen and (min-width: 600px) { 
@@ -493,13 +536,16 @@ footer {
     .placehold-about-our-company {
         width: 400px;
         float: left;
-        margin-top: 2rem;
+        box-sizing: border-box;
+        text-align: justify;
+        padding: 20px;
+        /*margin-top: 2rem;
         margin-left: 2rem;
-        margin-right: 2rem;
+        margin-right: 2rem;*/
     }
 
-    .about-our-company-btn {
-        float: left;
+    .about-our-company h2 {
+        padding-top: 8%;
     }
 
     .compeling-headline {
@@ -527,18 +573,22 @@ footer {
         max-width: 692px;
     }
 
+    .form {
+        margin-bottom: 2rem;
+    }
+
     .flex-container {
         display: flex;
         flex-direction: row;
     }
 
     .artikkel-kort {
-        flex-grow: 1;
+        flex-grow: 3;
         max-width: 692px;
     }
 
     iframe {
-        width:1000px;
+        width: 100%;
     }
 
     /*Kilde: https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
@@ -550,23 +600,30 @@ footer {
         transform: scale(1.5);
     }
 
-
-    footer a {
-        display: flex;
-        float: left;
-        margin-bottom: 50px;
-        margin-top: 50px;
+    .copyrights{
+       display: flex;
+       justify-content: center;
+       text-align: center;
+       
     }
 
     .fa-brands {
+        display: flex;
         float: right;
     }
 
-    p.copyrights {
-       margin-top: 100px;
-       margin-left: 50px;
-    }
+    .footer-logo {
+        display: flex;
+        float: left;
 
+    }
+    /*
+    footer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 30px;
+    }*/
         
     }
     
