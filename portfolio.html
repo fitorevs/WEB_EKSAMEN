@@ -22,22 +22,22 @@
 <body>
     <div id="grid-container">
         <!--header start-->
-        <header>
-            <nav>
+        <header role="banner">
+            <nav role="navigation">
                 <span>
                     <a href="index.html"><img src="img/logo1.png" class="logo-header" alt="Logo for nettstedet"></a>
                 </span>
                 <ul>
-                    <li><a href="index.html" class="home">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="portfolio.html" class="portfolio">Portfolio</a></li>
-                    <li><a href="about.html" class="about">About</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="about.html#contact" class="contact">Contact</a></li> <!--Kilde: https://www.w3schools.com/html/html_links_bookmarks.asp-->
                 </ul>
             </nav>
         </header>
         <!--header slutt-->
         <!--main start-->
-        <main>
+        <main role="main">
             <section class="portfolio-img">
                 <!--<img src="img/pen-4337524_1280.jpg" alt="Bilde av kontorverktøy">--> <!--Image by "https://pixabay.com/users/rupixen-11154019/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4337524">Free stock photos from www.rupixen.com-->
                 <h1>Portfolio</h1>
@@ -45,50 +45,54 @@
             <section>
                 <h2 class="explore-h">Explore previous jobs</h2>
                 <hr> <!--Kilde: https://www.w3schools.com/tags/tag_hr.asp-->
-                <ul>
+                <ul class="explore-list">
                     <li><a href="#branding" class="branding-btn">Branding</a></li>
                     <li><a href="#design" class="design-btn">Design</a></li>
                     <li><a href="#development" class="development-btn">Development</a></li>
                 </ul>
             </section>
-            <section class="flex-container" id="branding">
-                <article class="artikkel-kort">
-                    <h2>Branding</h2>
-                    <hr>
-                    <img src="https://placehold.co/400x400" class="placehold" alt="Placeholder 400x400">
-                    <h3>Et harum quidem</h3>
-                    <img src="https://placehold.co/400x400" class="placehold" alt="Placeholder 400x400">
-                    <h3>Et harum quidem</h3>
-                    <img src="https://placehold.co/400x400" class="placehold" alt="Placeholder 400x400">
-                    <h3>Et harum quidem</h3>
+            <section class="flex-container">
+                <!-- legge til aria: <article class="box-branding" id="branding" role="region" aria-labelledby="branding-heading">-->
+                <article class="box-branding" id="branding">
+                        <h2>Branding</h2>
+                        <hr>
+                        <img src="https://placehold.co/400x400" class="placehold" alt="Placeholder 400x400">
+                        <h3>Et harum quidem</h3>
+                        <img src="https://placehold.co/400x400" class="placehold" alt="Placeholder 400x400">
+                        <h3>Et harum quidem</h3>
+                        <img src="https://placehold.co/400x400" class="placehold" alt="Placeholder 400x400">
+                        <h3>Et harum quidem</h3>
                 </article>
             </section>
-            <section class="flex-container" id="design">
-                <article class="arikkel-kort">
-                    <h2>Design</h2>
-                    <hr>
-                    <img src="https://placehold.co/400x400" class="placehold-artikkel" alt="Placeholder 400x400">
-                    <h3>Et harum quidem</h3>
-                    <img src="https://placehold.co/400x400" class="placehold-artikkel" alt="Placeholder 400x400">
-                    <h3>Et harum quidem</h3>
-                    <img src="https://placehold.co/400x400" class="placehold-artikkel" alt="Placeholder 400x400">
-                    <h3>Et harum quidem</h3>
+            <section class="flex-container">
+                <!-- LEgge til aria: <article class="box-design" id="design" role="region" aria-labelledby="design-heading">-->
+                <article class="box-design" id="design">
+                        <h2>Design</h2>
+                        <hr>
+                        <img src="https://placehold.co/400x400" class="placehold-artikkel" alt="Placeholder 400x400">
+                        <h3>Et harum quidem</h3>
+                        <img src="https://placehold.co/400x400" class="placehold-artikkel" alt="Placeholder 400x400">
+                        <h3>Et harum quidem</h3>
+                        <img src="https://placehold.co/400x400" class="placehold-artikkel" alt="Placeholder 400x400">
+                        <h3>Et harum quidem</h3>
                 </article>
             </section>
-            <section class="flex-container" id="development">
-                <article class="artikkel-kort">
-                    <h2>Development</h2>
-                    <hr>
-                    <img src="https://placehold.co/400x400" class="placehold-artikkel" alt="Placeholder 400x400">
-                    <h3>Et harum quidem</h3>
-                    <img src="https://placehold.co/400x400" class="placehold-artikkel" alt="Placeholder 400x400">
-                    <h3>Et harum quidem</h3>
+            <section class="flex-container">
+                <!-- legge til aria: <article class="box-development" id="development" role="region" aria-labelledby="development-heading">-->
+                <article class="box-development" id="development">
+                        <h2>Development</h2>
+                        <hr>
+                        <img src="https://placehold.co/400x400" class="placehold-artikkel" alt="Placeholder 400x400">
+                        <h3>Et harum quidem</h3>
+                        <img src="https://placehold.co/400x400" class="placehold-artikkel" alt="Placeholder 400x400">
+                        <h3>Et harum quidem</h3>
                 </article>
+            </section>
             </section>
         </main>
         <!--main slutt-->
         <!--footer start-->
-        <footer>
+        <footer role="contentinfo">
             <a href="index.html"><img src="img/logo1.png" class="footer-logo" alt="Logo"></a>
             <p class="copyrights">Copyrights Companyname 2023</p>
             <a href="https://www.facebook.com/" class="fa-brands fa-square-facebook"></a>
@@ -98,7 +102,7 @@
         <!--footer slutt-->
     </div>
     <!-- Scroll-to-top-pil --> <!-- Kilde: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top -->
-    <button onclick="topFunction()" id="scroll-btn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <button onclick="topFunction()" id="scroll-btn" title="Go to top" aria-label="scroll to top button"><i class="fa-solid fa-arrow-up"></i></button>
     <script>
         let mybutton = document.getElementById("scroll-btn");
     

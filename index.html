@@ -22,24 +22,27 @@
 <body>
     <div id="grid-container">
         <!--header start-->
-        <header>
-            <nav>
+        <header role="banner">
+            <nav role="navigation">
                 <span>
-                    <a href="index.html"><img src="img/logo1.png" class="logo-header" alt="Logo for nettstedet"></a>
+                    <a href="index.html" role="link" aria-label="skip to main content" tabindex="0"><img src="img/logo1.png" class="logo-header" alt="Logo for nettstedet"></a>
                 </span>
-                <ul>
+                <ul id="navigation">
                     <li><a href="index.html" class="home">Home</a></li>
-                    <li><a href="portfolio.html" class="portfolio">Portfolio</a></li>
-                    <li><a href="about.html" class="about">About</a></li>
+                    <li><a href="portfolio.html">Portfolio</a></li>
+                    <li><a href="about.html">About</a></li>
                     <li><a href="about.html#contact" class="contact">Contact</a></li> <!--Kilde: https://www.w3schools.com/html/html_links_bookmarks.asp-->
                 </ul>
             </nav>
         </header>
         <!--header slutt-->
         <!--main start-->
-        <main>
+        <main role="main">
+            <section>
+                <!-- Kilde: https://www.w3schools.com/html/html5_video.asp -->
+                <video autoplay muted loop class="video" src="img/mountains.mp4" type="video/mp4"></video>
+            </section>
             <section class="compeling-headline">
-                <video src="img/mountains.mp4"></video>
                 <h1>Compeling headline</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                 <a href="index.html#our-services" class="our-services-gold-btn">Read more about our services</a>
@@ -49,7 +52,6 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae volutpat. Nulla aliquet porttitor venenatis.</p>
             </section>
             <section>
-                <!-- microdata-->
                 <article class="about-our-company">
                     <img src="https://placehold.co/400x400" class="placehold-about-our-company" alt="Placeholder 400x400">
                     <h2>About Our Company</h2>
@@ -58,14 +60,13 @@
                 </article>
             </section>
             <h2 class="our-services-header">Our Services</h2>
-            <section id="our-services">
+            <section id="our-services" role="region" aria-labelledby="our-services-heading">
                     <section class="branding">
                         <i class="fa-solid fa-people-group"></i>
                         <h3>Branding</h3>
                         <p>Lorem ipsum dolor sit amet, <br>
                             consectetur adipiscing elit.</p>
                     </section>
-                    <!-- microdata-->
                     <section class="branding">
                         <i class="fa-solid fa-cloud-arrow-up"></i>
                         <h3>Branding</h3>
@@ -95,7 +96,7 @@
         </main>
         <!--main slutt-->
         <!--footer start-->
-        <footer>
+        <footer role="contentinfo">
             <a href="index.html"><img src="img/logo1.png" class="footer-logo" alt="Logo"></a>
             <p class="copyrights">Copyrights Companyname 2023</p>
             <a href="https://www.facebook.com/" class="fa-brands fa-square-facebook"></a>
@@ -105,7 +106,7 @@
         <!--footer slutt-->
     </div>
     <!-- Scroll-to-top-pil --> <!-- Kilde: https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_scroll_to_top -->
-    <button onclick="topFunction()" id="scroll-btn" title="Go to top"><i class="fa-solid fa-arrow-up"></i></button>
+    <button onclick="topFunction()" id="scroll-btn" title="Go to top" aria-label="scroll to top button"><i class="fa-solid fa-arrow-up"></i></button>
     <script>
         let mybutton = document.getElementById("scroll-btn");
     

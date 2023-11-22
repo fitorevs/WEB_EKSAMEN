@@ -37,13 +37,25 @@ nav a {
     font-size: 14px;
 }
 
-a .home:visited {
+/* Kilde: https://stackoverflow.com/questions/43597768/html-how-to-bold-navigation-bar-text */
+ul #navigation, .home, .portfolio, .about {
     font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration-color: #e6bd43;
+    text-decoration-thickness: 2px;
 }
 
 main {
     text-align: center;
 }
+
+.home{
+    font-weight: bold;
+    text-decoration-line: underline;
+    text-decoration: color(#e6bd43);
+}
+
+
 
 .placehold, .placehold-artikkel{
     width: 350px;
@@ -76,6 +88,13 @@ main {
     opacity: 0.7;
     margin-top: 1rem;
 }
+
+/*.about-article::before {
+    content: '';
+    position: absolute;
+    background-position: top center;
+    opacity: 0.50;
+}*/
 
 .about-article h1 {
     font-weight: bold;
@@ -137,61 +156,39 @@ hr {
     padding-top: 20%;
 }
 
-#explore h2, #branding h2, #design h2, #development h2 {
-    text-align: justify;
-    padding-left: 3rem;
-    font-size: 18px;
-}
-
-#explore h3, #branding h3, #design h3, #development h3 {
-    text-align: justify;
-    padding-left: 3rem;
-    font-size: 18px;
-    padding-bottom: 1rem;
-    
-}
-
 .branding {
     padding: 1rem;
 }
 
-.branding-btn {
-    display: flex;
-    columns: 3;
-    text-decoration: none;
-    color: black;
-    width: 100px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    padding: 0.5rem;
-    margin: auto;
+#branding h2, #design h2, #development h2 {
+    text-align: justify;
+    padding-left: 3rem;
+    font-size: 18px;
 }
 
-.design-btn {
-    display: flex;
-    columns: 3;
-    text-decoration: none;
-    color: black;
-    width: 60px;
-    border-style: solid;
-    border-width: 2px;
-    border-color: black;
-    padding: 0.5rem;
-    margin: auto;
+.explore-h {
+    text-align: justify;
+    padding-left: 3rem;
 }
 
-.development-btn {
+/*#explore h3, #branding h3, #design h3, #development h3 {
     display: flex;
-    columns: 3;
+    flex-direction: column;
+    text-align: center;
+}*/ 
+
+.branding-btn, .design-btn, .development-btn {
+    display: grid;
+    grid-template-columns: auto;
+    margin: 1rem;
+    gap: 1rem;
     text-decoration: none;
     color: black;
-    width: 130px;
+    width: fit-content;
     border-style: solid;
     border-width: 2px;
     border-color: black;
     padding: 0.5rem;
-    margin: auto;
 }
 
 li {
@@ -452,6 +449,7 @@ footer {
     color: #fff;
     margin: 0.5rem;
     font-size: 30px;
+    
 }
 
 .footer-logo {
@@ -478,10 +476,6 @@ iframe {
     padding: 10px;
   }
   
-  /*#scroll-btn:hover { kode til annen farge når noe trykkes på
-    background-color: #555;
-  }*/
-
 
 @media only screen and (min-width: 600px) { 
 
@@ -502,12 +496,12 @@ iframe {
         grid-area: footer;
     }
 
-    header ul li {
+    header ul {
         display: flex;
         flex-direction: row;
     }
 
-    header {
+    header nav {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -516,6 +510,12 @@ iframe {
 
     .logo-header {
         margin: 1rem;
+        width: 100px;
+    }
+
+    .portfolio-img h1 {
+        position: relative;
+        padding-top: 100px;
     }
 
     .about-article {
@@ -557,13 +557,23 @@ iframe {
         box-sizing: border-box;
         text-align: justify;
         padding: 20px;
-        /*margin-top: 2rem;
-        margin-left: 2rem;
-        margin-right: 2rem;*/
     }
 
     .about-our-company h2 {
         padding-top: 8%;
+    }
+
+    .explore-list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .video {
+        position: absolute;
+        background-repeat: no-repeat;
+        display: block;
+        width: 100%;
+        height: fit-content;
     }
 
     .compeling-headline {
@@ -596,13 +606,24 @@ iframe {
     }
 
     .flex-container {
-        display: flex;
-        flex-direction: row;
+        display: grid;
+        grid-template-columns: auto auto auto;  
+        justify-content: space-around;
     }
 
-    .artikkel-kort {
-        flex-grow: 3;
-        max-width: 692px;
+    .box-branding {
+        display: row;
+        justify-items: center;
+    }
+
+    .box-development {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .box-design {
+        flex-direction: row;
+        justify-content: space-around;
     }
 
     iframe {
@@ -618,30 +639,23 @@ iframe {
         transform: scale(1.5);
     }
 
-    .copyrights{
-       display: flex;
-       justify-content: center;
-       text-align: center;
-       
-    }
 
-    .fa-brands {
-        display: flex;
-        float: right;
-    }
-
-    .footer-logo {
-        display: flex;
-        float: left;
-
-    }
-    /*
     footer {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 30px;
-    }*/
-        
+        padding: 10px;
+    }
+
+    .footer-logo {
+        margin: 1rem;
+        width: 100px;
+
+    }
+
+    .fa-brands {
+        margin: 0;
+    }
+
     }
     
