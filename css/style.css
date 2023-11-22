@@ -502,23 +502,20 @@ iframe {
         grid-area: footer;
     }
 
-    header nav ul li {
-        display: inline-block;    
-    }
-    
-    header nav ul {
+    header ul li {
         display: flex;
-        float: right; 
-        margin: 2rem;
+        flex-direction: row;
     }
 
-    header span nav ul {
-        display: inline-block;
+    header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 1rem;
     }
 
-    header span {
-        display: flex;
-        float: left;
+    .logo-header {
+        margin: 1rem;
     }
 
     .about-article {
