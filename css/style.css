@@ -56,11 +56,6 @@ main {
 }
 
 
-.placehold, .placehold-artikkel{
-    width: 350px;
-    padding-top: 1rem;
-}
-
 /* Kilde: https://www.w3schools.com/css/css_image_transparency.asp*/
 .background {
     position: relative;
@@ -155,6 +150,11 @@ hr {
     padding-top: 20%;
 }
 
+.placehold, .placehold-artikkel{
+    width: 300px;
+    padding-top: 1rem;
+}
+
 .branding {
     padding: 1rem;
 }
@@ -182,7 +182,7 @@ hr {
 .branding-btn, .design-btn, .development-btn {
     display: grid;
     grid-template-columns: auto;
-    margin: 1rem;
+    margin: 1rem 0;
     gap: 1rem;
     text-decoration: none;
     color: black;
@@ -338,7 +338,8 @@ video {
 }
     
 .clients-logo {
-    padding: 1rem;
+    width: 150px;
+    padding: 0.5rem;
 }
 
 .sign-up-newsletter {
@@ -369,19 +370,20 @@ video {
 
 /* Kilde: https://www.w3schools.com/css/tryit.asp?filename=trycss_forms */
 input[type=text], textarea { 
-    width: 50%;
-    padding: 12px;
-    margin: 8px 0;
+    padding: 10px;
     border: 1px solid #ccc;
 }
 
 .send-msg-btn {
+    display: block;
+    margin: 0 2rem;
     background-color: #e6bd43;
     color: black;
     font-weight: bold;
     width: 150px;
     height: 50px;
     border-style: none;
+    margin-top: 1rem;
 }
 
 .contact-icons {
@@ -393,12 +395,12 @@ input[type=text], textarea {
 
 #subject, #name, #message {
     border-style: none;
-    width: 390px;
+    width: 320px;
 }
 
 .contact-icons li{
     margin: 1rem;
-    margin-left: 2rem;
+    margin-left: 1rem;
 }
 
 .fa-location-pin, .fa-phone, .fa-envelope {
@@ -417,10 +419,10 @@ input[type=text], textarea {
 
 }
 #contact-us h4 {
-   text-align: justify;
-    padding-left: 3rem;
+    text-align: justify;
+    padding-left: 2rem;
     font-size: 18px;
-    padding-bottom: 1rem
+    padding-top: 2rem;
 }
 
 #contact-us p {
@@ -662,7 +664,6 @@ iframe {
 
     #contact-us form, #contact-us article {
         flex-basis: 50%;
-        margin: 0 auto;
     }
 
     #contact-us h4 {    
