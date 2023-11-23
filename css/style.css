@@ -290,7 +290,6 @@ video {
     border-style: solid;
     padding: 1rem;
     margin-right: 14%;
-
 }
 
 .about-our-company p {
@@ -362,9 +361,10 @@ video {
     padding-left: 1rem;
 }
 
-.contact-us {
+#contact-us {
     background-color: whitesmoke;
 }
+
 
 /* Kilde: https://www.w3schools.com/css/tryit.asp?filename=trycss_forms */
 input[type=text], textarea { 
@@ -409,20 +409,20 @@ input[type=text], textarea {
     padding-right: 1rem;
 }
 
-.contact-us h3 {
+#contact-us h3 {
     text-align: center;
     font-size: 18px;
     padding-top: 1rem
 
 }
-.contact-us h4 {
-    text-align: justify;
+#contact-us h4 {
+   text-align: justify;
     padding-left: 3rem;
     font-size: 18px;
     padding-bottom: 1rem
 }
 
-.contact-us p {
+#contact-us p {
     text-align: justify;
     padding-left: 50px;
     padding-right: 50px;  
