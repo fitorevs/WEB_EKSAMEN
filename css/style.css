@@ -275,7 +275,6 @@ video {
 
 .about-our-company h2 {
     font-size: 20px;
-    font-weight: bold;
     padding-left: 50px;
     padding-right: 50px;
     padding-top: 2rem;
@@ -285,7 +284,6 @@ video {
 }
 
 .about-our-company-btn {
-    box-sizing: border-box;
     text-decoration: none;
     color: black;
     font-weight: bold;
@@ -444,7 +442,6 @@ footer {
 }
 
 footer a {
-    display: inline-block;
     color: #fff;
     margin: 0.5rem;
     font-size: 30px;   
@@ -452,7 +449,11 @@ footer a {
 
 footer li{
     display: inline-block;
-    align-items: center;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
 }
 
 .footer-logo {
