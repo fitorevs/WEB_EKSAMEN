@@ -38,10 +38,10 @@
         <!--header slutt-->
         <!--main start-->
         <main role="main">
-            <section>
+            <figure>
                 <!-- Kilde: https://www.w3schools.com/html/html5_video.asp -->
                 <video autoplay muted loop class="video" src="img/mountains.mp4" type="video/mp4"></video>
-            </section>
+            </figure>
             <section class="compeling-headline">
                 <h1>Compeling headline</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
@@ -96,12 +96,16 @@
         </main>
         <!--main slutt-->
         <!--footer start-->
-        <footer role="contentinfo">
-            <a href="index.html"><img src="img/logo1.png" class="footer-logo" alt="Logo"></a>
-            <p class="copyrights">Copyrights Companyname 2023</p>
-            <a href="https://www.facebook.com/" class="fa-brands fa-square-facebook"></a>
-            <a href="https://www.instagram.com/" class="fa-brands fa-square-instagram"></a>
-            <a href="https://www.linkedin.com/" class="fa-brands fa-linkedin"></a>
+        <footer role="contentinfo" itemscope itemtype="https://schema.org/Organization" aria-label="footer section">
+            <a href="index.html"><img src="img/logo1.png" class="footer-logo" alt="--Nettstedets logo"></a>
+            <p class="copyrights">
+                <span itemprop="copyrightHolder">Copyrights</span> <span itemprop="name">Companyname</span> <span itemprop="dateCreated">2023</span>
+            </p>
+            <ul>
+                <li><a href="https://www.facebook.com/" class="fa-brands fa-square-facebook"></a></li>
+                <li><a href="https://www.instagram.com/" class="fa-brands fa-square-instagram"></a></li>
+                <li><a href="https://www.linkedin.com/" class="fa-brands fa-linkedin"></a></li>
+            </ul>
         </footer>
         <!--footer slutt-->
     </div>

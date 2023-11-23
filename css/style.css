@@ -56,7 +56,6 @@ main {
 }
 
 
-
 .placehold, .placehold-artikkel{
     width: 350px;
     padding-top: 1rem;
@@ -438,18 +437,22 @@ footer {
     padding: 2rem;
 }
 
-
 .copyrights {
     color: #fff;
     font-weight: 100;
     font-size: 15px;
 }
 
-.fa-brands {
+footer a {
+    display: inline-block;
     color: #fff;
     margin: 0.5rem;
-    font-size: 30px;
-    
+    font-size: 30px;   
+}
+
+footer li{
+    display: inline-block;
+    align-items: center;
 }
 
 .footer-logo {
@@ -568,16 +571,29 @@ iframe {
         flex-direction: row;
     }
 
+    figure {
+        position: relative;
+        overflow: hidden;
+        width: 100vw;
+        height: 50vh;
+        margin: 0 auto;
+
+    }
+
     .video {
         position: absolute;
         background-repeat: no-repeat;
         display: block;
         width: 100%;
-        height: fit-content;
+        height: auto;
     }
 
     .compeling-headline {
-        position: relative;
+        position: absolute;
+        top: 200px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
         align-items: center;
         padding: 1rem 0;
     }
@@ -639,12 +655,18 @@ iframe {
         transform: scale(1.5);
     }
 
+    footer ul li{
+        display: inline-block;
+        align-items: center;
+        padding: 1rem;
+        margin: 0;
+    }
 
     footer {
         display: flex;
+        flex-flow: row wrap;
         justify-content: space-between;
         align-items: center;
-        padding: 10px;
     }
 
     .footer-logo {
