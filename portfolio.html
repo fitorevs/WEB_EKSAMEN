@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,8 +22,8 @@
 <body>
     <div id="grid-container">
         <!--header start-->
-        <header role="banner">
-            <nav role="navigation">
+        <header>
+            <nav>
                 <span>
                     <a href="index.html"><img src="img/logo1.png" class="logo-header" alt="Logo for nettstedet"></a>
                 </span>
@@ -31,13 +31,13 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="portfolio.html" class="portfolio">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="about.html#contact" class="contact">Contact</a></li> <!--Kilde: https://www.w3schools.com/html/html_links_bookmarks.asp-->
+                    <li><a href="about.html#contact-us" class="contact">Contact</a></li> <!--Kilde: https://www.w3schools.com/html/html_links_bookmarks.asp-->
                 </ul>
             </nav>
         </header>
         <!--header slutt-->
         <!--main start-->
-        <main role="main">
+        <main>
             <section class="portfolio-img">
                 <!--<img src="img/pen-4337524_1280.jpg" alt="Bilde av kontorverktøy">--> <!--Image by "https://pixabay.com/users/rupixen-11154019/?utm_source=link-attribution&utm_medium=referral&utm_campaign=image&utm_content=4337524">Free stock photos from www.rupixen.com-->
                 <h1>Portfolio</h1>
@@ -53,7 +53,7 @@
             </section>
             <section class="flex-container">
                 <!-- legge til aria: <article class="box-branding" id="branding" role="region" aria-labelledby="branding-heading">-->
-                <article class="box-branding" id="branding">
+                <article id="branding">
                         <h2>Branding</h2>
                         <hr>
                         <img src="https://placehold.co/400x400" class="placehold" alt="Placeholder 400x400">
@@ -66,7 +66,7 @@
             </section>
             <section class="flex-container">
                 <!-- LEgge til aria: <article class="box-design" id="design" role="region" aria-labelledby="design-heading">-->
-                <article class="box-design" id="design">
+                <article id="design">
                         <h2>Design</h2>
                         <hr>
                         <img src="https://placehold.co/400x400" class="placehold-artikkel" alt="Placeholder 400x400">
@@ -79,7 +79,7 @@
             </section>
             <section class="flex-container">
                 <!-- legge til aria: <article class="box-development" id="development" role="region" aria-labelledby="development-heading">-->
-                <article class="box-development" id="development">
+                <article id="development">
                         <h2>Development</h2>
                         <hr>
                         <img src="https://placehold.co/400x400" class="placehold-artikkel" alt="Placeholder 400x400">
@@ -88,15 +88,12 @@
                         <h3>Et harum quidem</h3>
                 </article>
             </section>
-            </section>
         </main>
         <!--main slutt-->
         <!--footer start-->
-        <footer role="contentinfo" itemscope itemtype="https://schema.org/Organization" aria-label="footer section">
+        <footer aria-label="footer section">
             <a href="index.html"><img src="img/logo1.png" class="footer-logo" alt="--Nettstedets logo"></a>
-            <p class="copyrights">
-                <span itemprop="copyrightHolder">Copyrights</span> <span itemprop="name">Companyname</span> <span itemprop="dateCreated">2023</span>
-            </p>
+            <p class="copyrights">Copyrights Companyname 2023</p>
             <ul>
                 <li><a href="https://www.facebook.com/" class="fa-brands fa-square-facebook"></a></li>
                 <li><a href="https://www.instagram.com/" class="fa-brands fa-square-instagram"></a></li>

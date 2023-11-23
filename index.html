@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zxx">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -22,29 +22,29 @@
 <body>
     <div id="grid-container">
         <!--header start-->
-        <header role="banner">
-            <nav role="navigation">
+        <header>
+            <nav>
                 <span>
-                    <a href="index.html" role="link" aria-label="skip to main content" tabindex="0"><img src="img/logo1.png" class="logo-header" alt="Logo for nettstedet"></a>
+                    <a href="index.html" aria-label="skip to main content" tabindex="0"><img src="img/logo1.png" class="logo-header" alt="Logo for nettstedet"></a>
                 </span>
                 <ul id="navigation">
                     <li><a href="index.html" class="home">Home</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="about.html">About</a></li>
-                    <li><a href="about.html#contact" class="contact">Contact</a></li> <!--Kilde: https://www.w3schools.com/html/html_links_bookmarks.asp-->
+                    <li><a href="about.html#contact-us" class="contact">Contact</a></li> <!--Kilde: https://www.w3schools.com/html/html_links_bookmarks.asp-->
                 </ul>
             </nav>
         </header>
         <!--header slutt-->
         <!--main start-->
-        <main role="main">
+        <main>
             <figure>
                 <!-- Kilde: https://www.w3schools.com/html/html5_video.asp -->
-                <video autoplay muted loop class="video" src="img/mountains.mp4" type="video/mp4"></video>
+                <video autoplay muted loop class="video" src="img/mountains.mp4"></video>
             </figure>
             <section class="compeling-headline">
                 <h1>Compeling headline</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
                 <a href="index.html#our-services" class="our-services-gold-btn">Read more about our services</a>
             </section>
             <section class="enganging-subheading">
@@ -59,8 +59,10 @@
                     <a href="about.html" class="about-our-company-btn">Read more about us</a>
                 </article>
             </section>
-            <h2 class="our-services-header">Our Services</h2>
-            <section id="our-services" role="region" aria-labelledby="our-services-heading">
+            <section>
+                <h2 class="our-services-header">Our Services</h2>
+            </section>
+            <section id="our-services">
                     <section class="branding">
                         <i class="fa-solid fa-people-group"></i>
                         <h3>Branding</h3>
@@ -96,11 +98,9 @@
         </main>
         <!--main slutt-->
         <!--footer start-->
-        <footer role="contentinfo" itemscope itemtype="https://schema.org/Organization" aria-label="footer section">
-            <a href="index.html"><img src="img/logo1.png" class="footer-logo" alt="--Nettstedets logo"></a>
-            <p class="copyrights">
-                <span itemprop="copyrightHolder">Copyrights</span> <span itemprop="name">Companyname</span> <span itemprop="dateCreated">2023</span>
-            </p>
+        <footer aria-label="footer section">
+            <a href="index.html"><img src="img/logo1.png" class="footer-logo" alt="Nettstedets logo"></a>
+            <p class="copyrights">Copyrights Companyname 2023</p>
             <ul>
                 <li><a href="https://www.facebook.com/" class="fa-brands fa-square-facebook"></a></li>
                 <li><a href="https://www.instagram.com/" class="fa-brands fa-square-instagram"></a></li>
