@@ -183,11 +183,9 @@ hr {
     padding-top: 1rem;
 }
 
-
 .explore-list {
     padding-top: 1rem;
 }
-
 
 .branding-btn, .design-btn, .development-btn { 
     display: flex;
@@ -257,16 +255,16 @@ video {
     margin: 0.5rem;
     text-align: left;
     margin-top: 30px;
-    margin-left: 100px;
-    margin-right: 100px;
+    max-width: 250px;
+    
 }
 
 
 .enganging-subheading {
     text-align: center;
     padding: 2rem;
-    padding-left: 50px;
-    padding-right: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
 .enganging-subheading h2 {
@@ -303,12 +301,13 @@ video {
     text-align: left;
     border-style: solid;
     padding: 1rem;
+    margin-right: 10px;
 
 }
 
 .about-our-company p {
     line-height: 1.6;
-    text-align:left;
+    text-align: left;
     margin-left: 100px;
     margin-right: 100px;
     margin-bottom: 10%;
