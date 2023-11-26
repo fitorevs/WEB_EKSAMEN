@@ -174,8 +174,9 @@ hr {
 }
 
 .flex-branding h3, .flex-design h3, .flex-development h3 {
-    text-align: justify;
-    padding-left: 10%
+    text-align: left;
+    padding-left: 1rem;
+    
 }
 
 .placehold-artikkel, .placehold-artikkel4, .placehold-artikkel-dev, .placehold-artikkel-design {
@@ -616,7 +617,6 @@ iframe {
     }
 
     .get-in-touch-btn {
-        position: relative;
         display: inline-block;
         background-color: #e6bd43;
         font-weight: bold;
@@ -624,8 +624,7 @@ iframe {
         text-decoration: none;
         padding: 1rem;
         margin: 0.5rem;
-        margin-right: 65%;
-        width: max-content;
+        margin-right: 68%;
     }
 
     .contact:hover, .our-services-gold-btn:hover, .about-our-company-btn:hover, .sign-up-btn:hover, .branding-btn:hover, .design-btn:hover, .development-btn:hover, .get-in-touch-btn:hover, .send-msg-btn:hover{
@@ -756,11 +755,11 @@ iframe {
     }
 
     /*Kilde: https://www.w3schools.com/howto/howto_css_zoom_hover.asp */
-    .placehold {
+    .placehold-artikkel {
         transition: .5s;
     }
 
-    .placehold:hover {
+    .placehold-artikkel:hover {
         transform: scale(1.5);
     }
 
