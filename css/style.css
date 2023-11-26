@@ -150,11 +150,6 @@ hr {
     padding-top: 20%;
 }
 
-.placehold, .placehold-artikkel{
-    width: 300px;
-    padding-top: 1rem;
-}
-
 .branding {
     padding: 1rem;
 }
@@ -166,17 +161,24 @@ hr {
     font-weight: bold;
 }
 
-#branding h2, #design h2, #development h2 {
+#branding, #design, #development, .explore-h {
+    border-bottom: 3px solid #e6bd43;
+    max-width: 80%;
+    margin: 0 auto;
     text-align: justify;
-    padding-left: 3rem;
-    padding-top: 1rem;
-    font-size: 18px;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+    font-size: 20px;
 }
 
-.explore-h {
+.flex-branding h3, .flex-design h3, .flex-development h3 {
     text-align: justify;
-    font-size: 20px;
-    padding-left: 3rem;
+    padding-left: 10%
+}
+
+.placehold-artikkel, .placehold-artikkel4, .placehold-artikkel-dev, .placehold-artikkel-design {
+    width: 300px;
+    padding-top: 1rem;
 }
 
 .branding-btn, .design-btn, .development-btn {
@@ -267,7 +269,6 @@ video {
 
 .about-our-company {
     background-color: #e6bd43;
-    padding-bottom: 20%;
 }
 
 .placehold-about-our-company {
@@ -286,12 +287,13 @@ video {
 }
 
 .about-our-company-btn {
+    display: inline-block;
     text-decoration: none;
     color: black;
     font-weight: bold;
     border-style: solid;
     padding: 1rem;
-    margin-right: 14%;
+
 }
 
 .about-our-company p {
@@ -348,16 +350,17 @@ video {
 }
 
 .sign-up-newsletter h3 {
-    font-size: 25px;
+    font-size: 20px;
 }
 
 .sign-up-btn {
     background-color: #e6bd43;
     color: black;
     font-weight: bold;
-    width: 150px;
+    width: 110px;
     height: 50px;
     border-style: none;
+    font-size: 15px;
 }
 
 .sign-up-email-btn {
@@ -525,6 +528,76 @@ iframe {
         padding-top: 100px;
     }
 
+    .branding-btn, .design-btn, .development-btn {
+        margin: 1rem;
+        margin-left: 2rem ;
+        margin-right: 0;
+        margin-top: 2rem;
+    }
+
+    .flex-branding, .flex-design, .flex-development {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        justify-content: space-around;
+        align-items: baseline;
+        margin: 0 auto;
+        padding: 1rem;
+    }
+
+    .branding-card {
+        padding-top: 1rem;
+        max-width: 400px;
+    }
+
+    .design-card {
+        padding-top: 1rem;
+        max-width: 400px;
+    }
+
+    .development-card {
+        padding-top: 1rem;
+        width: 100%;
+        padding-right: 100px;
+        padding-left: 50px;
+    }
+
+    #branding, #design, #development, .explore-h {
+        text-align: justify;
+        border-bottom: 3px solid #e6bd43;
+        font-size: 30px;
+        max-width: 90%;
+        margin: 0 auto;
+        padding-bottom: 1rem;
+        padding-top: 2rem;
+    }
+
+    .branding-card h3 {
+        text-align: left;
+    }
+
+    .placehold-artikkel {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .placehold-artikkel4 {
+        width: 150%;
+        padding-left: 1rem;
+    }
+
+    .placehold-artikkel-design {
+        width: 100%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
+    .placehold-artikkel-dev {
+        width: 150%;
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+
     .about-article {
         margin-left: 40%;
         background-color: #ffffff;
@@ -567,18 +640,17 @@ iframe {
     .placehold-about-our-company {
         width: 400px;
         float: left;
-        box-sizing: border-box;
-        text-align: justify;
         padding: 2rem;
     }
 
     .about-our-company h2 {
         padding-top: 8%;
+        margin: 0 auto;
     }
 
-    /*.about-our-company-btn{
-   
-     FIKSE}*/
+    .about-our-company-btn {
+       display: inline;
+    }
 
     .enganging-subheading h2 {
         font-size: 30px;
@@ -649,15 +721,6 @@ iframe {
         font-size: 30px;
     }
 
-    #branding {
-        display: inline-block;
-        max-width: 692px;
-    }
-
-    #branding h2, #design h2, #development h2 {
-        font-size: 30px;
-    }
-
     .form {
         margin-bottom: 2rem;
     }
@@ -672,22 +735,11 @@ iframe {
     }
 
     #contact-us {
-        margin-left: 3rem;
-        margin-right: 3rem;
-    }
-
-    #contact-us {
         display: flex;
         flex-flow: row wrap;
         align-items: baseline;
         justify-content: space-between;
         position: relative;
-    }
-
-    .flex-container {
-        display: grid;
-        grid-template-columns: auto auto auto;  
-        justify-content: space-around;
     }
 
     iframe {
