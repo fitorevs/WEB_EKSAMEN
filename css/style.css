@@ -75,20 +75,19 @@ main {
 }
 
 .about-article {
+    position: relative;
     margin: 30px;
     padding: 30px;
-    background-color: #ffffff;
-    border: 1px transparent;
-    opacity: 0.7;
     margin-top: 1rem;
+    opacity: 0.7;
+    background-color: #ffffff;
 }
 
-/*.about-article::before {
+.about-article::before {
     content: '';
     position: absolute;
     background-position: top center;
-    opacity: 0.50;
-}*/
+}
 
 .about-article h1 {
     font-weight: bold;
@@ -99,6 +98,7 @@ main {
 }
 
 .about-article p {
+    position: relative;
     text-align: left;
     padding-left: 50px;
     padding-right: 50px;
@@ -115,6 +115,8 @@ main {
     margin: 0.5rem;
     width: max-content;
     margin-top: 30px;
+    max-width: 160px;
+    text-align: left;
 }
 
 hr {
@@ -181,11 +183,16 @@ hr {
     padding-top: 1rem;
 }
 
-.branding-btn, .design-btn, .development-btn {
-    display: grid;
-    grid-template-columns: auto;
+
+.explore-list {
+    padding-top: 1rem;
+}
+
+
+.branding-btn, .design-btn, .development-btn { 
+    display: flex;
+    flex-wrap: wrap;
     margin: 1rem 0;
-    gap: 1rem;
     text-decoration: none;
     color: black;
     width: fit-content;
@@ -269,6 +276,7 @@ video {
 
 .about-our-company {
     background-color: #e6bd43;
+    padding-bottom: 3rem;
 }
 
 .placehold-about-our-company {
@@ -291,6 +299,8 @@ video {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    max-width: 160px;
+    text-align: left;
     border-style: solid;
     padding: 1rem;
 
