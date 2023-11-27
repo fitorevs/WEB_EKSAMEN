@@ -400,7 +400,7 @@ input[type=text], textarea {
 }
 
 #subject, #name, #message {
-    padding-right: 90px;
+    padding-right: 80px;
     border-style: none;
 }
 
@@ -607,7 +607,7 @@ iframe {
 
     .placehold-artikkel-dev {
         width: 150%;
-        padding-right: 10%;
+        padding-right: 2rem;
     }
 
     .about-article {
