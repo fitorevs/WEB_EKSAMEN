@@ -169,7 +169,7 @@ hr {
 
 .flex-branding h3, .flex-design h3, .flex-development h3 {
     text-align: left;
-    padding-left: 1rem;
+    padding-left: 10%;
     
 }
 
@@ -251,7 +251,6 @@ video {
     text-align: left;
     margin-top: 30px;
     max-width: 250px;
-    
 }
 
 
@@ -579,6 +578,10 @@ iframe {
         text-align: left;
     }
 
+    .flex-branding h3, .flex-design h3, .flex-development h3 {
+        text-align: left;
+    }
+
     .placehold-artikkel {
         width: 100%;
         padding-left: 1rem;
@@ -598,8 +601,7 @@ iframe {
 
     .placehold-artikkel-dev {
         width: 150%;
-        padding-left: 1rem;
-        padding-right: 1rem;
+        padding-right: 10%;
     }
 
     .about-article {
@@ -729,17 +731,21 @@ iframe {
 
     #contact-us form, #contact-us article {
         flex-basis: 50%;
+        margin: 0 auto;
+        padding-bottom: 2rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
     }
 
-    #contact-us h4 {    
+    #contact-us h3 {    
         flex-basis: 100%;
-        text-align: left;
+        text-align: center;
     }
 
     #contact-us {
         display: flex;
         flex-flow: row wrap;
-        align-items: baseline;
+        align-items: justify;
         justify-content: space-between;
         position: relative;
     }
