@@ -111,6 +111,7 @@ main {
     margin-top: 30px;
     max-width: 160px;
     text-align: left;
+    margin-right: 2.5rem;
 }
 
 hr {
@@ -147,7 +148,7 @@ hr {
 }
 
 .branding {
-    padding: 1rem;
+    padding: 1.5rem;
 }
 
 #branding h3, #design h3, #development h3 {
@@ -169,12 +170,12 @@ hr {
 
 .flex-branding h3, .flex-design h3, .flex-development h3 {
     text-align: left;
-    padding-left: 10%;
+    padding-left: 40px;
     
 }
 
 .placehold-artikkel, .placehold-artikkel4, .placehold-artikkel-dev, .placehold-artikkel-design {
-    width: 300px;
+    width: 320px;
     padding-top: 1rem;
 }
 
@@ -267,19 +268,18 @@ video {
 
 .about-our-company {
     background-color: #e6bd43;
-    padding-bottom: 3rem;
+    padding-bottom: 10%;
 }
 
 .placehold-about-our-company {
     padding: 2rem;
     display: inline;
-    width: 80%;
+    width: 90%;
 }
 
 .about-our-company h2 {
     font-size: 20px;
     padding-left: 50px;
-    padding-right: 50px;
     text-align: left;
     margin-top: 30px;
     margin-left: 50px;
@@ -294,7 +294,7 @@ video {
     text-align: left;
     border-style: solid;
     padding: 1rem;
-    margin-right: 1rem;
+    margin-right: 40px;
 
 }
 
@@ -400,7 +400,7 @@ input[type=text], textarea {
 }
 
 #subject, #name, #message {
-    padding-right: 80px;
+    padding-right: 130px;
     border-style: none;
 }
 
@@ -436,7 +436,6 @@ input[type=text], textarea {
     padding-left: 2rem; 
     padding-right: 2rem; 
 }
-
 
 footer {
     text-align: center;
@@ -624,8 +623,10 @@ iframe {
         font-weight: bold;
         color: black;
         text-decoration: none;
-        padding: 1rem;
+        min-width: 160px;
+        max-width: 500px;
         margin: 0.5rem;
+        padding: 1rem;
         margin-right: 68%;
     }
 
@@ -659,7 +660,12 @@ iframe {
     }
 
     .about-our-company-btn {
-       display: inline;
+        position: absolute;
+        top: 135%;
+        right: 57%;
+        float: left;
+        min-width: 160px;
+        max-width: 500px;
     }
 
     .about-our-company p {
@@ -734,7 +740,8 @@ iframe {
     }
     
     #subject, #name, #message {
-        padding-right: 150px;
+        padding: 1rem;
+        margin-left: 2rem;
     }
     
     #contact-us form, #contact-us article {

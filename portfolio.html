@@ -4,14 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Generell metadata -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
+    <meta name="description" content="Explore our past projects to get a glimpse into our expertise and capabilities. Dive into our portfolio to see the range and quality of our previous work, showcasing and commitment to excellence.">
+    <meta name="keywords" content="company name, portfolio, explore, jobs, branding, design, development">
     <meta name="author" content="Nora Nordmann">
-    <!--Facebook metadata -->
-    <meta property="og:title" content="">
-    <meta property="og:url" content="">
-    <meta property="og:description" content="">
-    <meta property="og:image" content="">
+    <!-- Facebook metadata -->
+    <meta property="og:title" content="Company Name: Portfolio">
+    <meta property="og:url" content="https://itstud.hiof.no/~fitorevs/web_eksamen/portfolio.html/">
+    <meta property="og:description" content="Explore Previous Jobs in branding, design and development with our experienced team. #Branding #Design #Development">
+    <meta property="og:image:" content="img/pen-4337524_1280.jpg">
     <!-- Stilark for normalisering som sikrer at nettstedet ser likt ut på alle nettlesere -->
     <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css" type="text/css">
     <!-- Ikon-stiler fro ikoner fra FontAwesome -->
@@ -22,7 +22,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;1,100&display=swap" rel="stylesheet">
-    <!--Nettstedets eget stilark -->
+    <!-- Nettstedets eget stilark -->
     <link rel="stylesheet" href="css/style.css" type="text/css">
     <title>Portfolio</title>
     <!-- Favicon --> <!-- Kilde: https://www.w3schools.com/html/html_favicon.asp -->
@@ -37,10 +37,10 @@
                     <a href="index.html"><img src="img/logo1.png" class="logo-header" alt="Logo for nettstedet"></a>
                 </span>
                 <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="portfolio.html" class="portfolio">Portfolio</a></li>
-                    <li><a href="about.html">About</a></li>
-                    <li><a href="about.html#contact-us" class="contact">Contact</a></li> <!--Kilde: https://www.w3schools.com/html/html_links_bookmarks.asp-->
+                    <li><a href="index.html" role="button">Home</a></li>
+                    <li><a href="portfolio.html" class="portfolio" role="button">Portfolio</a></li>
+                    <li><a href="about.html" role="button">About</a></li>
+                    <li><a href="about.html#contact-us" class="contact" role="button">Contact</a></li> <!--Kilde: https://www.w3schools.com/html/html_links_bookmarks.asp-->
                 </ul>
             </nav>
         </header>
@@ -54,9 +54,9 @@
             <section>
                 <h2 class="explore-h">Explore previous jobs</h2>
                 <ul class="explore-list">
-                    <li><a href="#branding" class="branding-btn">Branding</a></li>
-                    <li><a href="#design" class="design-btn">Design</a></li>
-                    <li><a href="#development" class="development-btn">Development</a></li>
+                    <li><a href="#branding" class="branding-btn" role="button">Branding</a></li>
+                    <li><a href="#design" class="design-btn" role="button">Design</a></li>
+                    <li><a href="#development" class="development-btn" role="button">Development</a></li>
                 </ul>
             </section>
             <section>
@@ -80,10 +80,10 @@
                     <h3>Et harum quidem</h3>
                 </article>
             </section>
-            <section aria-label="job card">
+            <section>
                 <h2 id="design">Design</h2>
             </section>
-            <section class="flex-design">
+            <section class="flex-design" aria-label="job card">
                 <article class="design-card">
                     <img src="https://placehold.co/400x400" class="placehold-artikkel-design" alt="Placeholder 400x400">
                     <h3>Et harum quidem</h3>
@@ -97,10 +97,10 @@
                     <h3>Et harum quidem</h3>
                 </article>
             </section>
-            <section aria-label="job card">
+            <section>
                 <h2 id="development">Development</h2>
             </section>
-            <section class="flex-development">
+            <section class="flex-development" aria-label="job card">
                 <article class="development-card">
                     <img src="https://placehold.co/400x400" class="placehold-artikkel-dev" alt="Placeholder 400x400">
                     <h3>Et harum quidem</h3>
@@ -117,9 +117,9 @@
             <a href="index.html"><img src="img/logo1.png" class="footer-logo" alt="Nettstedets logo"></a>
             <p class="copyrights">Copyrights Companyname 2023</p>
             <ul>
-                <li><a href="https://www.facebook.com/" class="fa-brands fa-square-facebook" aria-label="facebook ikon"></a></li>
-                <li><a href="https://www.instagram.com/" class="fa-brands fa-square-instagram" aria-label="instagram ikon"></a></li>
-                <li><a href="https://www.linkedin.com/" class="fa-brands fa-linkedin" aria-label="linkedin ikon"></a></li>
+                <li><a href="https://www.facebook.com/" class="fa-brands fa-square-facebook" role="button" aria-label="facebook ikon"></a></li>
+                <li><a href="https://www.instagram.com/" class="fa-brands fa-square-instagram" role="button" aria-label="instagram ikon"></a></li>
+                <li><a href="https://www.linkedin.com/" class="fa-brands fa-linkedin" role="button" aria-label="linkedin ikon"></a></li>
             </ul>
         </footer>
         <!-- footer slutt -->
