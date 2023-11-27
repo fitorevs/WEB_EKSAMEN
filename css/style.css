@@ -656,6 +656,14 @@ iframe {
        display: inline;
     }
 
+    .about-our-company p {
+        line-height: 1.6;
+        text-align: left;
+        margin-left: 100px;
+        margin-right: 100px;
+        margin-bottom: 10%;
+    }
+
     .enganging-subheading h2 {
         font-size: 30px;
         width: 40%;
