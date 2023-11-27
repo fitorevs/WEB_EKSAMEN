@@ -253,7 +253,6 @@ video {
     max-width: 250px;
 }
 
-
 .enganging-subheading {
     text-align: center;
     padding: 2rem;
@@ -308,7 +307,7 @@ video {
 }
 
 .our-services-header {
-    font-size: 20px;
+    font-size: 25px;
     font-weight: bold;
     padding-top: 2rem;
 }
@@ -378,6 +377,15 @@ video {
 input[type=text], textarea { 
     padding: 10px;
     border: 1px solid #ccc;
+}
+
+#message { 
+    height: 150px;
+    margin-right: 60px;
+}
+
+#subject, #name {
+    margin-right: 60px;
 }
 
 .send-msg-btn {
@@ -531,6 +539,15 @@ iframe {
         padding-top: 100px;
     }
 
+    .explore-list {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .explore-h {
+        font-size: 30px;
+    }
+
     .branding-btn, .design-btn, .development-btn {
         margin: 1rem;
         margin-left: 2rem ;
@@ -576,11 +593,8 @@ iframe {
 
     .branding-card h3 {
         text-align: left;
-    }
-
-    .flex-branding h3, .flex-design h3, .flex-development h3 {
-        text-align: left;
-    }
+        padding-right: 50%;
+    } 
 
     .placehold-artikkel {
         width: 100%;
@@ -636,7 +650,7 @@ iframe {
     }
 
     .our-services-header {
-        font-size: 25px;
+        font-size: 30px;
         font-weight: bold;
         padding-top: 2rem;
     }
@@ -676,18 +690,12 @@ iframe {
         padding-top: 2rem;
     }
 
-    .explore-list {
-        display: flex;
-        flex-direction: row;
-    }
-
     figure {
         position: relative;
         overflow: hidden;
         width: 100vw;
         height: 50vh;
         margin: 0 auto;
-
     }
 
     .video {
@@ -697,7 +705,6 @@ iframe {
         width: 100%;
         height: auto;
         opacity: 50%;
-        
     }
 
     .compeling-headline {
@@ -729,14 +736,15 @@ iframe {
         margin: 0 auto;
     }
 
-    .explore-h {
-        font-size: 30px;
+    #message { 
+        height: 150px;
+        margin-right: 60px;
     }
-
-    .form {
-        margin-bottom: 2rem;
+    
+    #subject, #name, #message {
+        padding-right: 150px;
     }
-
+    
     #contact-us form, #contact-us article {
         flex-basis: 50%;
         margin: 0 auto;
@@ -768,6 +776,10 @@ iframe {
 
     #contact-us form input[type=text], #contact-us form textarea {
         width: 100%;
+    }
+
+    .clients h3 {
+        font-size: 30px;
     }
 
     iframe {
