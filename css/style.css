@@ -195,10 +195,6 @@ hr {
     padding: 0.5rem;
 }
 
-.design-btn {
- 
-}
-
 .compeling-headline {
     position: relative;
     align-items: center;
@@ -759,7 +755,6 @@ iframe {
     #contact-us {
         display: flex;
         flex-flow: row wrap;
-        align-items: justify;
         justify-content: space-between;
         position: relative;
     }
@@ -767,7 +762,6 @@ iframe {
     #contact-us form {
         display: flex;
         flex-direction: column;
-        align-items: justify;
         padding-left: 10%;
     }
 
