@@ -266,13 +266,13 @@ video {
     padding-bottom: 10%;
 }
 
-.placehold-about-our-company {
+.about-our-company img {
     padding: 2rem;
     display: inline;
     width: 90%;
 }
 
-.about-our-company h2 {
+.about-our-company h3 {
     font-size: 20px;
     padding-left: 50px;
     text-align: left;
@@ -642,13 +642,13 @@ iframe {
         padding-top: 2rem;
     }
 
-    .placehold-about-our-company {
+    .about-our-company img {
         width: 400px;
         float: left;
         padding: 2rem;
     }
 
-    .about-our-company h2 {
+    .about-our-company h3 {
         padding-top: 8%;
         margin: 0 auto;
     }
