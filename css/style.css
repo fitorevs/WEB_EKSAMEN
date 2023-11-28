@@ -528,6 +528,7 @@ iframe {
     .explore-list {
         display: flex;
         flex-direction: row;
+        padding: 2rem
     }
 
     .explore-h {
@@ -550,17 +551,18 @@ iframe {
 
     .branding-card {
         padding-top: 1rem;
-        max-width: 400px;
+        max-width: 692px;
     }
 
     .design-card {
         padding-top: 1rem;
-        max-width: 400px;
+        max-width: 692px;
     }
 
     .development-card {
         padding-top: 1rem;
         width: 100%;
+        max-width: 692px;
         padding-right: 100px;
         padding-left: 50px;
     }
@@ -569,7 +571,7 @@ iframe {
         text-align: justify;
         border-bottom: 3px solid #e6bd43;
         font-size: 30px;
-        max-width: 90%;
+        max-width: 92%;
         margin: 0 auto;
         padding-bottom: 1rem;
         padding-top: 2rem;
