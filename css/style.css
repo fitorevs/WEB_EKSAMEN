@@ -195,7 +195,6 @@ hr {
     padding: 0.5rem;
 }
 
-
 .compeling-headline {
     position: relative;
     align-items: center;
@@ -536,10 +535,8 @@ iframe {
     }
 
     .branding-btn, .design-btn, .development-btn {
-        margin: 1rem;
-        margin-left: 2rem ;
-        margin-right: 0;
-        margin-top: 2rem;
+        display: inline-block;
+        margin-left: 2rem;
     }
 
     .flex-branding, .flex-design, .flex-development {
